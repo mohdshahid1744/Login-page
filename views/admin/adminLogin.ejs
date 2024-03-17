@@ -1,0 +1,38 @@
+<%- include('../partials/main'); -%>
+    <div id="loader">
+        <div class="position-fixed top-0 w-0 h-100 w-100 bg-black d-flex align-items-center justify-content-center z-top">
+            <div class="spinner-border text-light" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </div>
+    </div>
+    <section class="vh-100" style="background-color: #01632a;">
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+              <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                <div class="card-body p-5 text-center">
+      
+                  <h3 class="mb-5">Admin Login</h3>
+                <form action="/admin" method="post">
+                  <div class="form-outline mb-4">
+                    <input placeholder="Name" type="text" name="name" id="typeEmailX-2" class="form-control form-control-lg" />
+                    <!-- <label class="form-label" for="typeEmailX-2">Email</label> -->
+                  </div>
+                  <div class="form-outline mb-4">
+                    <input type="password" placeholder="password" name="password" id="typePasswordX-2" class="form-control form-control-lg" />
+                    <!-- <label class="form-label" for="typePasswordX-2">Password</label> -->
+                  </div>
+                  <button class="btn btn-dark btn-lg btn-block" type="submit">Login</button>
+                </form>
+                <p style="color: green;"></p>
+  <% 
+        if(typeof message !== 'undefined'){ 
+             %>
+                <p style="color: green;"><%= message%> </p>
+             <%
+         }
+
+
+  %>
+  <%- include('../partials/footer') %>

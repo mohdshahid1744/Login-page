@@ -1,0 +1,29 @@
+body {
+    background-color: #f8f9fa;
+}
+.navbar {
+    background-color: #28a745;
+}
+.table {
+    background-color: #ffffff;
+}
+.table th, .table td {
+    border-color: #dee2e6;
+}
+.btn-edit {
+    background-color: #01632a;
+    border-color: #06090c;
+}
+.btn-delete {
+    background-color: #01632a;
+    border-color: #0e1a26;
+}
+
+.btn-update {
+    background-color: #01632a;
+    border-color: #03080c;
+}
+
+.z-top {
+    z-index: 9999999999;
+}
